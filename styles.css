@@ -1,1 +1,120 @@
 /* your code here */
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+.product{
+	h3{
+		color:grey;
+	}
+	/* border:5px solid green; */
+	background-color:#fff;
+	padding:50px;
+	background-color:#9EDF9C;
+	display:flex;
+	justify-content:center;
+	align-content:center;
+	.photo-container{
+		position:relative;
+		left:170px;
+		z-index:2;
+		background-color:#fff;
+		border-radius:10px;
+		/* border:5px solid blue; */
+		margin:25px;
+		.photo-main{
+			background-color:green;
+			img{
+				position:relative;
+				right:60px;
+				/* border:5px solid BLACK; */
+				
+			}
+			 /* border:5px solid yellow; */
+			
+			.controls{
+				color:#fff;
+				padding:1rem;
+				display:flex;
+				justify-content:space-between;
+				align-item:center;
+				 /* border:5px solid orange;
+				 margin:25px; */
+			}
+			
+		}
+		.photo-album{
+			display:flex;
+			justify-content:right;
+			/* border:2px solid pink; */
+			padding:10px 25px 10px 25px;
+			ul{
+				display: flex;
+				justify-content: space-evenly;
+				gap:5px; /* Optional: Adds space between items */
+				padding: 0;
+				list-style: none;
+				li{
+					border:2px solid gray;
+				}
+			}
+		}
+	}
+
+	.product__info{
+		position:relative;
+		right:170px;
+		/* border:5px solid black; */
+		border-radius:10px;
+		padding:0px 0px 0px 340px;
+		background-color:#fff;
+		.title{
+			/* border:5px solid red; */
+		    margin:40px 0px 0px 35px;
+			span{
+				color:gray;
+				margin-top:0px;
+			}
+		}
+
+		.price{
+			/* border:5px solid magenta; */
+			color:red;
+		    margin:25px;
+			span{
+				font-size:50px;
+			}
+		}
+		.variant{
+			ul{
+				display: flex;
+				justify-content: space-evenly;
+				gap:5px; /* Optional: Adds space between items */
+				margin-top:10px;
+				list-style: none;
+				li{
+					border:2px solid gray;
+				}
+			}
+			/* border:5px solid purple; */
+		    margin:30px;
+		}
+		.description{
+			/* border:5px solid gray; */
+		    margin:10px 0px 30px 0px;
+			ul{
+				margin-top:10px;
+			}
+		}
+		button{
+			text-align:center;
+			padding:1rem;
+			border:none;
+			font-weight:bold;
+			border-radius:10px;
+			background-color:red;
+		}
+	}
+}
+
