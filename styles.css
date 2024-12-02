@@ -1,120 +1,108 @@
-/* your code here */
-*{
-	margin:0px;
-	padding:0px;
-	box-sizing:border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-.product{
-	h3{
-		color:grey;
-	}
-	/* border:5px solid green; */
-	background-color:#fff;
-	padding:50px;
-	background-color:#9EDF9C;
-	display:flex;
-	justify-content:center;
-	align-content:center;
-	.photo-container{
-		position:relative;
-		left:170px;
-		z-index:2;
-		background-color:#fff;
-		border-radius:10px;
-		/* border:5px solid blue; */
-		margin:25px;
-		.photo-main{
-			background-color:green;
-			img{
-				position:relative;
-				right:60px;
-				/* border:5px solid BLACK; */
-				
-			}
-			 /* border:5px solid yellow; */
-			
-			.controls{
-				color:#fff;
-				padding:1rem;
-				display:flex;
-				justify-content:space-between;
-				align-item:center;
-				 /* border:5px solid orange;
-				 margin:25px; */
-			}
-			
-		}
-		.photo-album{
-			display:flex;
-			justify-content:right;
-			/* border:2px solid pink; */
-			padding:10px 25px 10px 25px;
-			ul{
-				display: flex;
-				justify-content: space-evenly;
-				gap:5px; /* Optional: Adds space between items */
-				padding: 0;
-				list-style: none;
-				li{
-					border:2px solid gray;
-				}
-			}
-		}
-	}
-
-	.product__info{
-		position:relative;
-		right:170px;
-		/* border:5px solid black; */
-		border-radius:10px;
-		padding:0px 0px 0px 340px;
-		background-color:#fff;
-		.title{
-			/* border:5px solid red; */
-		    margin:40px 0px 0px 35px;
-			span{
-				color:gray;
-				margin-top:0px;
-			}
-		}
-
-		.price{
-			/* border:5px solid magenta; */
-			color:red;
-		    margin:25px;
-			span{
-				font-size:50px;
-			}
-		}
-		.variant{
-			ul{
-				display: flex;
-				justify-content: space-evenly;
-				gap:5px; /* Optional: Adds space between items */
-				margin-top:10px;
-				list-style: none;
-				li{
-					border:2px solid gray;
-				}
-			}
-			/* border:5px solid purple; */
-		    margin:30px;
-		}
-		.description{
-			/* border:5px solid gray; */
-		    margin:10px 0px 30px 0px;
-			ul{
-				margin-top:10px;
-			}
-		}
-		button{
-			text-align:center;
-			padding:1rem;
-			border:none;
-			font-weight:bold;
-			border-radius:10px;
-			background-color:red;
-		}
-	}
+body {
+  background-color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(2px, 2vw, 18px);
 }
+.product {
+  display: flex;
+  width: 100%;
+  margin: 50px;
+  /* border: 2px solid red; */
+  .product__photo {
+    margin: 15px;
+    /* border: 2px solid blue; */
 
+    .photo-container {
+      position: relative;
+      left: clamp(67.55px, 45vw, 500.2px);
+      margin: 15px;
+      margin-right: 0px;
+      margin-left: 0px;
+      /* border: 2px solid green; */
+      background-color: #fff;
+      border-radius: 7px;
+      .photo-main {
+        background-color: lime;
+        /* margin: 15px; */
+
+        img {
+          position: relative;
+          right: 6vw;
+          /* border: 2px solid khaki; */
+          width: clamp(20px, 30vw, 400px);
+        }
+        .controls {
+          display: flex;
+          justify-content: space-between;
+          margin: 15px;
+          padding: 15px;
+          color: #fff;
+          /* border: 2px solid orange; */
+        }
+      }
+
+      .photo-album {
+        margin: 15px;
+        /* border: 2px solid pink; */
+        ul {
+          list-style-type: none;
+          display: flex;
+          justify-content: space-evenly;
+        }
+        img {
+          width: 10vw;
+        }
+      }
+    }
+  }
+
+  .product__info {
+    margin: 15px;
+    margin-left: 0px;
+    padding-left: clamp(67.55px, 45vw, 500.2px);
+    border-radius: 7px;
+    /* border: 2px solid teal; */
+    background-color: #fff;
+    .title {
+      margin: 15px;
+      margin-top: clamp(26px, 10vw, 122px);
+      /* border: 2px solid maroon; */
+    }
+
+    .price {
+      margin: 15px;
+      /* border: 2px solid navy; */
+    }
+
+    .variant {
+      margin: 15px;
+      /* border: 2px solid olive; */
+      ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      img {
+        width: 10vw;
+      }
+    }
+
+    .description {
+      margin: 15px;
+      /* border: 2px solid lime; */
+    }
+
+    .add-cart {
+      margin: 15px;
+      border: none;
+      border-radius: 7px;
+      background-color: red;
+      padding: 10px;
+    }
+  }
+}
